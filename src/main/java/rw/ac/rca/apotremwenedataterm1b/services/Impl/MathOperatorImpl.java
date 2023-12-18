@@ -5,6 +5,7 @@ import rw.ac.rca.apotremwenedataterm1b.exceptions.InvalidOperationException;
 import rw.ac.rca.apotremwenedataterm1b.services.MathOperator;
 @Service
 public class MathOperatorImpl implements MathOperator {
+
     @Override
     public double doMath(double operand1, double operand2, String
             operation) throws InvalidOperationException{
