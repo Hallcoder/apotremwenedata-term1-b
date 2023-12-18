@@ -39,7 +39,8 @@ public class MathOperatorImplTest {
 
         double actualMathOperator = mathOperatorService.doMath(operand1, operand2, operation);
 
-        MatcherAssert.assertThat(mathOperation).usingRecursiveComparison().isEqualTo(actualMathOperator);
+        assertEquals(mathOperation,actualMathOperator);
+
     }
     @Test
     public void givenTwoNumbers_whenSubstracted_ReturnsDifference() throws InvalidOperationException {
